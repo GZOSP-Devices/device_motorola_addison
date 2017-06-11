@@ -101,10 +101,6 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     Snap
 
-# GzR ka
-PRODUCT_PACKAGES += \
-    KernelAdiutor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8953_mot_camera.xml:system/etc/camera/msm8953_mot_camera.xml \
     $(LOCAL_PATH)/configs/camera/ov5693_chromatix.xml:system/etc/camera/ov5693_chromatix.xml \
