@@ -236,6 +236,9 @@ PRODUCT_PACKAGES += \
     libshim_ril \
     libxml2
 
+# Root Method
+DEFAULT_ROOT_METHOD := supersu
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf
