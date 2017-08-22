@@ -29,23 +29,28 @@
 
 #include <stdlib.h>
 
-#include "vendor_init.h"
+#include <android-base/properties.h>
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+#include "vendor_init.h"
+
+namespace android {
+namespace init {
 
 void vendor_load_properties()
 {
-    std::string platform = property_get("ro.board.platform");
+    std::string platform = android::base::GetProperty("ro.board.platform", "");
     if (platform != ANDROID_TARGET)
         return;
 
-    std::string sku = property_get("ro.boot.hardware.sku");
+    std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
     property_set("ro.product.model", sku.c_str());
 
     // rmt_storage
-    std::string device = property_get("ro.boot.device");
-    std::string radio = property_get("ro.boot.radio");
+    std::string device = android::base::GetProperty("ro.boot.device", "");
+    std::string radio = android::base::GetProperty("ro.boot.radio", "");
     property_set("ro.hw.device", device.c_str());
     property_set("ro.hw.radio", radio.c_str());
+}
+
+}
 }
