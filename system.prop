@@ -86,6 +86,7 @@ persist.radio.VT_USE_MDM_TIME=0
 
 # Media
 media.aac_51_output_enabled=true
+persist.media.treble_omx=false
 
 # Radio
 persist.data.qmi.adb_logmask=0
@@ -108,4 +109,4 @@ persist.data.mode=concurrent
 ro.hardware.sensors=addison
 
 # Vendor Extension
-ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.extension_library=libqti-perfd-client.sođđ
