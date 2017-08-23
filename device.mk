@@ -185,6 +185,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fpc1020.kl:system/usr/keylayout/fpc1020.kl
 
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8953 \
@@ -263,6 +267,9 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf
+
+#PRODUCT_PACKAGES += \
+#    android.hardware.sensors@1.0-impl
 
 # Thermal
 PRODUCT_COPY_FILES += \
