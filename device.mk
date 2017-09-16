@@ -108,7 +108,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8953 \
     libbson \
     libshim_camera \
     MotCamera \
