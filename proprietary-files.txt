@@ -48,8 +48,8 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8953.so:lib/hw/camera.vendor.msm8953.so
-lib/hw/camera.rc.so
+vendor/etc/sensors/camera.msm8953.so:lib/hw/camera.vendor.msm8953.so
+vendor/etc/sensors/camera.rc.so
 lib/libadvalgcore.so
 lib/libarcsoft_beautyshot.so
 lib/libcamerabgprocservice.so
@@ -252,7 +252,7 @@ vendor/lib/libssd.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Fingerprint
-lib/hw/fingerprint.msm8953.so
+vendor/etc/sensors/fingerprint.msm8953.so
 lib/libcom_fingerprints_service.so
 lib/lib_fpc_tac_shared.so
 vendor/lib/hw/gatekeeper.msm8953.so
@@ -517,10 +517,10 @@ vendor/lib/libscveTextReco_stub.so
 # Sensors
 bin/motosh
 etc/firmware/sensorhubfw.bin
-lib/hw/sensorhub.msm8953.so
-lib/hw/sensors.addison.so
-lib/hw/sensors.iio.so
-lib/hw/sensors.msm8953.so
+vendor/etc/sensors/sensorhub.msm8953.so
+vendor/etc/sensors/sensors.addison.so
+vendor/etc/sensors/sensors.iio.so
+vendor/etc/sensors/sensors.msm8953.so
 lib/libiio.so
 lib/libsensorhub.so
 vendor/lib/libsensor1.so

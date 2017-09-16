@@ -40,6 +40,10 @@ TARGET_CPU_VARIANT := cortex-a53
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := addison,addison_retail
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_addison
 TARGET_RECOVERY_DEVICE_MODULES := libinit_addison
@@ -96,8 +100,6 @@ ENABLE_CPUSETS := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Display
-USE_DEVICE_SPECIFIC_DISPLAY := true
-DEVICE_SPECIFIC_DISPLAY_PATH := hardware/qcom/display-caf/msm8937
 BOARD_USES_ADRENO := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
