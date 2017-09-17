@@ -42,7 +42,7 @@ TARGET_OTA_ASSERT_DEVICE := addison,addison_retail
 
 # HIDL
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+    $(DEVICE_PATH)/manifest.xml:system/vendor/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_addison
