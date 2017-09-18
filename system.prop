@@ -42,6 +42,7 @@ ro.bluetooth.sap=true
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
+persist.camera.HAL3.enabled=1
 camera.disable_zsl_mode=1
 camera.display.umax=1920x1080
 camera.display.lmax=1280x720
