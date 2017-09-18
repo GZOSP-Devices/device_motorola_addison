@@ -110,5 +110,7 @@ persist.data.mode=concurrent
 # Sensors
 ro.hardware.sensors=addison
 
+ro.sys.sdcardfs=false
+
 # Vendor Extension
 ro.vendor.extension_library=libqti-perfd-client.sođđ
